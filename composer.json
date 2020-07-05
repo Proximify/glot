@@ -1,5 +1,15 @@
 {
     "name": "proximify/glot",
+    "description": "Create websites using a multilingual markup language.",
+    "type": "project",
     "license": "LGPL-3.0-or-later",
+    "keywords": [
+        "markup",
+        "localization",
+        "multilingual"
+    ],
+    "support": {
+        "email": "support@proximify.com"
+    },
     "require": {}
 }
