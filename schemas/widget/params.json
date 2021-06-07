@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Widget parameters",
+    "description": "Widget parameters",
+    "type": "array",
+    "items": {
+        "oneOf": [
+            { "$ref": "params/text.json" },
+            { "$ref": "params/simpleText.json" },
+            { "$ref": "params/href.json" },
+            { "$ref": "params/dropdown.json" },
+            { "$ref": "params/switch.json" },
+            { "$ref": "params/media.json" },
+            { "$ref": "params/file.json" },
+            { "$ref": "params/color.json" },
+            { "$ref": "params/simpleNumber.json" },
+            { "$ref": "params/number.json" },
+            { "$ref": "params/slide.json" },
+            { "$ref": "params/submenu.json" },
+            { "$ref": "params/table.json" },
+            { "$ref": "params/font.json" },
+            { "$ref": "params/systemPanel.json" }
+        ]
+    }
+}

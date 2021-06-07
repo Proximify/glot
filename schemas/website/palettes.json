@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Website assets schema",
+    "description": "Settings of website assets like images, videos and documents",
+    "type": "object",
+    "properties": {
+        "available": {
+            "patternProperties": {
+                "^.*$": {
+                    "description": "Name of the palette",
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "type": "string",
+                            "description": "Label of the palette"
+                        },
+                        "data": {
+                            "type": "array",
+                            "description": "Colors in the palette",
+                            "items": {
+                                "type": "string",
+                                "minItems": 1
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "active": {
+            "type": "array",
+            "description": "Active palettes in GUI",
+            "items": {
+                "type": "string",
+                "description": "Name of the palette"
+            }
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Website pages settings schema",
+    "description": "Website pages settings schema",
+    "type": "object",
+    "oneOf": [
+        { "$ref": "#/definitions/isFolder" },
+        { "$ref": "#/definitions/isPage" }
+    ],
+    "definitions": {
+        "isFolder": {
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "isFolder": {
+                            "const": true
+                        },
+                        "label": {
+                            "type": "string",
+                            "description": "The label of the folder"
+                        },
+                        "path": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["isFolder", "label", "path"],
+                    "additionalProperties": false
+                }
+            }
+        },
+        "isPage": {
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "type": "string",
+                            "description": "File name of the page"
+                        },
+                        "path": {
+                            "type": "string",
+                            "description": "Directory of the page"
+                        },
+                        "SHA1": {
+                            "type": "string",
+                            "description": "SHA1 of the page file"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

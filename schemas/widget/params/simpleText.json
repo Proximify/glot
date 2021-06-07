@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Text parameter",
+    "description": "Text parameter (Single language)",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "simpleText"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label"]
+}

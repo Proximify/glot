@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Website fonts schema",
+    "description": "Settings of website fonts",
+    "type": "object",
+    "definitions": {
+        "font": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the font"
+                },
+                "default": {
+                    "type": "boolean",
+                    "description": "Default font cannot be deleted in GUI"
+                },
+                "styles": {
+                    "type": "object",
+                    "description": "Pairs of font styles and font file name."
+                }
+            }
+        }
+    },
+    "properties": {
+        "fonts": {
+            "patternProperties": {
+                "^.*$": {
+                    "$ref": "#/definitions/font"
+                }
+            }
+        },
+        "activeFonts": {
+            "type": "array",
+            "description": "Active fonts in GUI. Active fonts will be the options in the GUI to let user select.",
+            "items": {
+                "$ref": "#/definitions/font",
+                "dependencies": {
+                    "name": {
+                        "properties": {
+                            "fontId": { "type": "string" }
+                        },
+                        "required": ["fontId"]
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

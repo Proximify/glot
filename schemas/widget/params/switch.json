@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Switch parameter",
+    "description": "Switch parameter",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "switch"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        },
+        "target": {
+            "const": "css",
+            "description": "CSS switch parameter. Change parameter will change css properties."
+        },
+        "properties": {
+            "type": ["object", "array"],
+            "description": "Pairs of css property name and value. Or classes."
+        }
+    },
+    "required": ["type", "name", "label"]
+}

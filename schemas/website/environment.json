@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Renderer environment schema",
+    "description": "Renderer environment schema",
+    "type": "object",
+    "properties": {
+        "pluginFolder": {
+            "type": "string",
+            "description": "Plugin folder"
+        },
+        "systemPlugins": {
+            "type": "object",
+            "description": "Mapped system plugins"
+        },
+        "renderingType": {
+            "type": "string",
+            "description": "Rendering type",
+            "enum": ["static", "dynamic"]
+        }
+    }
+}

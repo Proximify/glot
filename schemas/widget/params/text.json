@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Text parameter",
+    "description": "Text parameter (multilingual)",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "text"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "editor": {
+            "type": ["boolean", "string"],
+            "description": "Enable rich text editor."
+        },
+        "live": {
+            "type": ["boolean", "string"],
+            "description": "Update website while changing the text."
+        },
+        "linkOption": {
+            "type": ["boolean", "string"],
+            "description": "Enable the link button, set the text to be the link to a page or an asset in the website."
+        },
+        "notranslate": {
+            "type": ["boolean", "string"],
+            "description": "Disable the auto translation. When user add a new language to the website, auto translation will ignore this parameter."
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label"]
+}

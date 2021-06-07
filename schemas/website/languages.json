@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Website languages schema",
+    "description": "Settings of website languages",
+    "type": "object",
+    "properties": {
+        "languages": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "description": "Language code"
+            },
+            "minItems": 1
+        },
+        "mainLang": {
+            "type": "string",
+            "description": "Primary language of the website, one of language declared in the languages property."
+        }
+    }
+}

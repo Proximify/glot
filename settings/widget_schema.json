@@ -1,0 +1,705 @@
+{
+    "3.0.2":{
+        "widgetSettings": {
+            "filePath": "config/settings.json"
+        },
+        "widgetMaker": {
+            "folder": "src"
+        },
+        "widgetParams": {
+            "filePath": "config/params.json"
+        },
+        "widgetConstraints": {
+            "filePath": "config/constraints.json"
+        },
+        "externalLibs": {
+            "filePath": "config/dependency.json"
+        },
+        "polyfills": {
+            "filePath": "config/polyfills.json",
+            "jsonPath": "predefined"
+        },
+        "polyfillIO": {
+            "filePath": "config/polyfills.json",
+            "jsonPath": "polyfillIO"
+        },
+        "constraints": {
+            "filePath": "config/constraints.json"
+        },
+        "templates": {
+            "folder": "templates"
+        },
+        "styles": {
+            "folder": "styles"
+        },
+        "css": {
+            "folder": "src/css"
+        },
+        "js": {
+            "folder": "src/js"
+        },
+        "widgetIcon": {
+            "resource_value": {
+                "filePath": "config/settings.json",
+                "jsonPath": "icon"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "storeImage": {
+            "resource_value": {
+                "filePath": "config/settings.json",
+                "jsonPath": "storeImage"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "templateCover": {
+            "resource_value": {
+                "filePath": "config/settings.json",
+                "jsonPath": "templates/{$template}/image"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "storeSlides": {
+            "slides_value": {
+                "filePath": "config/settings.json",
+                "jsonPath": "storeSlides"
+            },
+            "img_slide": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "assets": {
+            "base_folder": "assets"
+        },
+        "fonts": {
+            "base_folder": "fonts"
+        },
+        "dictionaries": {
+            "base_folder": "dictionaries"
+        },
+        "panel": {
+            "filePath": "dictionaries/panel.json"
+        },
+        "markup": {
+            "filePath": "dictionaries/markup.json"
+        },
+        "profile": {
+            "filePath": "dictionaries/profile.json"
+        }
+    },
+    "3.0.1": {
+        "widgetSettings": {
+            "filePath": "settings/component.json"
+        },
+        "widgetMaker": {
+            "folder": "src"
+        },
+        "widgetParams": {
+            "filePath": "settings/params.json"
+        },
+        "widgetConstraints": {
+            "filePath": "settings/constraints.json"
+        },
+        "externalLibs": {
+            "filePath": "settings/dependency.json"
+        },
+        "polyfills": {
+            "filePath": "settings/polyfills.json",
+            "jsonPath": "predefined"
+        },
+        "polyfillIO": {
+            "filePath": "settings/polyfills.json",
+            "jsonPath": "polyfillIO"
+        },
+        "constraints": {
+            "filePath": "settings/constraints.json"
+        },
+        "templates": {
+            "folder": "templates"
+        },
+        "styles": {
+            "folder": "styles"
+        },
+        "css": {
+            "folder": "src/css"
+        },
+        "js": {
+            "folder": "src/js"
+        },
+        "widgetIcon": {
+            "resource_value": {
+                "filePath": "settings/component.json",
+                "jsonPath": "icon"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "storeImage": {
+            "resource_value": {
+                "filePath": "settings/component.json",
+                "jsonPath": "storeImage"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "templateCover": {
+            "resource_value": {
+                "filePath": "settings/component.json",
+                "jsonPath": "templates/{$template}/image"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "storeSlides": {
+            "slides_value": {
+                "filePath": "settings/component.json",
+                "jsonPath": "storeSlides"
+            },
+            "img_slide": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "assets": {
+            "base_folder": "assets"
+        },
+        "fonts": {
+            "base_folder": "fonts"
+        },
+        "dictionaries": {
+            "base_folder": "dictionaries"
+        },
+        "panel": {
+            "filePath": "dictionaries/panel.json"
+        },
+        "markup": {
+            "filePath": "dictionaries/markup.json"
+        },
+        "profile": {
+            "filePath": "dictionaries/profile.json"
+        }
+    },
+    "2.0.1": {
+        "widgetSettings": {
+            "filePath": "store/settings.json"
+        },
+        "widgetConstraints": {
+            "filePath": "store/settings.json"
+        },
+        "widgetMaker": {
+            "folder": "maker"
+        },
+        "defaultContent": {
+            "filePath": "maker/defaultContent.json"
+        },
+        "widgetParams": {
+            "filePath": "maker/params.json"
+        },
+        "polyfills": {
+            "filePath": "store/settings.json",
+            "jsonPath": "polyfills"
+        },
+        "polyfillIO": {
+            "filePath": "dependencies/externalLibs.json",
+            "jsonPath": "polyfills"
+        },
+        "customLibs": {
+            "filePath": "dependencies/customLibs.json"
+        },
+        "standardLibs": {
+            "filePath": "dependencies/standardLibs.json"
+        },
+        "externalLibs": {
+            "filePath": "dependencies/externalLibs.json"
+        },
+        "templates": {
+            "folder": "templates"
+        },
+        "styles": {
+            "folder": "styles"
+        },
+        "css": {
+            "folder": "css"
+        },
+        "js": {
+            "folder": "js"
+        },
+        "widgetIcon": {
+            "resource_value": {
+                "filePath": "store/settings.json",
+                "jsonPath": "icon"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "storeImage": {
+            "resource_value": {
+                "filePath": "store/settings.json",
+                "jsonPath": "storeImage"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "templateCover": {
+            "resource_value": {
+                "filePath": "store/settings.json",
+                "jsonPath": "templates/{$template}/image"
+            },
+            "resource_path": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "storeSlides": {
+            "slides_value": {
+                "filePath": "store/settings.json",
+                "jsonPath": "storeSlides"
+            },
+            "img_slide": {
+                "base_folder": "store/store_assets"
+            }
+        },
+        "assets": {
+            "base_folder": "assets"
+        },
+        "fonts": {
+            "base_folder": "fonts"
+        },
+        "dictionaries": {
+            "base_folder": "dictionaries"
+        },
+        "panel": {
+            "filePath": "dictionaries/panel.json"
+        },
+        "markup": {
+            "filePath": "dictionaries/markup.json"
+        },
+        "profile": {
+            "filePath": "dictionaries/profile.json"
+        },
+        "packageStructure": {
+            "maker": {
+                "type": "folder",
+                "required": true,
+                "children": {
+                    "params.json": {
+                        "type": "file",
+                        "required": true
+                    },
+                    "Widget.php": {
+                        "type": "file",
+                        "required": true,
+                        "readOnly": true
+                    },
+                    "{$widget}.php": {
+                        "type": "file",
+                        "required": true
+                    },
+                    "defaultContent.json": {
+                        "type": "file"
+                    }
+                }
+            },
+            "templates": {
+                "type": "folder",
+                "children": {}
+            },
+            "assets": {
+                "type": "folder",
+                "required": true,
+                "acceptChildrenExt": [
+                    "png",
+                    "jpg",
+                    "svg",
+                    "gif",
+                    "jpeg",
+                    "doc",
+                    "docx",
+                    "xls",
+                    "xlsx",
+                    "otf",
+                    "eot",
+                    "ppt",
+                    "pptx",
+                    "json"
+                ],
+                "functions": {
+                    "self": {
+                        "addFolder": {
+                            "label": {
+                                "en": "New folder",
+                                "fr": "New folder"
+                            }
+                        },
+                        "addFile": {
+                            "label": {
+                                "en": "New file",
+                                "fr": "New file"
+                            }
+                        }
+                    },
+                    "children": {
+                        "folder": {
+                            "addFolder": {
+                                "label": {
+                                    "en": "New folder",
+                                    "fr": "New folder"
+                                }
+                            },
+                            "addFile": {
+                                "label": {
+                                    "en": "New file",
+                                    "fr": "New file"
+                                }
+                            },
+                            "rename": {
+                                "label": {
+                                    "en": "Rename",
+                                    "fr": "Rename"
+                                }
+                            },
+                            "delete": {
+                                "label": {
+                                    "en": "Delete",
+                                    "fr": "Delete"
+                                }
+                            }
+                        },
+                        "file": {
+                            "rename": {
+                                "label": {
+                                    "en": "Rename",
+                                    "fr": "Rename"
+                                }
+                            },
+                            "delete": {
+                                "label": {
+                                    "en": "Delete",
+                                    "fr": "Delete"
+                                }
+                            }
+                        }
+                    }
+                },
+                "children": {}
+            },
+            "css": {
+                "type": "folder",
+                "required": true,
+                "acceptChildrenExt": ["css", "scss"],
+                "readOnlyChildrenExt": ["css"],
+                "functions": {
+                    "self": {
+                        "addFile": {
+                            "label": {
+                                "en": "New file",
+                                "fr": "New file"
+                            }
+                        }
+                    },
+                    "children": {
+                        "file": {
+                            "rename": {
+                                "label": {
+                                    "en": "Rename",
+                                    "fr": "Rename"
+                                }
+                            },
+                            "delete": {
+                                "label": {
+                                    "en": "Delete",
+                                    "fr": "Delete"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "js": {
+                "type": "folder",
+                "required": true,
+                "acceptChildrenExt": ["js"],
+                "functions": {
+                    "self": {
+                        "addFile": {
+                            "label": {
+                                "en": "New file",
+                                "fr": "New file"
+                            }
+                        }
+                    },
+                    "children": {
+                        "file": {
+                            "rename": {
+                                "label": {
+                                    "en": "Rename",
+                                    "fr": "Rename"
+                                }
+                            },
+                            "delete": {
+                                "label": {
+                                    "en": "Delete",
+                                    "fr": "Delete"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "dependencies": {
+                "type": "folder",
+                "required": true,
+                "children": {
+                    "customLibs.json": {
+                        "type": "file",
+                        "required": true
+                    },
+                    "externalLibs.json": {
+                        "type": "file",
+                        "required": true
+                    },
+                    "standardLibs.json": {
+                        "type": "file",
+                        "required": true
+                    }
+                }
+            },
+            "store": {
+                "type": "folder",
+                "required": true,
+                "children": {
+                    "settings.json": {
+                        "type": "file",
+                        "required": true
+                    },
+                    "store_assets": {
+                        "type": "folder",
+                        "required": true,
+                        "acceptChildrenExt": [
+                            "png",
+                            "jpg",
+                            "svg",
+                            "gif",
+                            "jpeg"
+                        ],
+                        "functions": {
+                            "self": {
+                                "addFolder": {
+                                    "label": {
+                                        "en": "New folder",
+                                        "fr": "New folder"
+                                    }
+                                },
+                                "addFile": {
+                                    "label": {
+                                        "en": "New file",
+                                        "fr": "New file"
+                                    }
+                                }
+                            },
+                            "children": {
+                                "folder": {
+                                    "addFolder": {
+                                        "label": {
+                                            "en": "New folder",
+                                            "fr": "New folder"
+                                        }
+                                    },
+                                    "addFile": {
+                                        "label": {
+                                            "en": "New file",
+                                            "fr": "New file"
+                                        }
+                                    },
+                                    "rename": {
+                                        "label": {
+                                            "en": "Rename",
+                                            "fr": "Rename"
+                                        }
+                                    },
+                                    "delete": {
+                                        "label": {
+                                            "en": "Delete",
+                                            "fr": "Delete"
+                                        }
+                                    }
+                                },
+                                "file": {
+                                    "rename": {
+                                        "label": {
+                                            "en": "Rename",
+                                            "fr": "Rename"
+                                        }
+                                    },
+                                    "delete": {
+                                        "label": {
+                                            "en": "Delete",
+                                            "fr": "Delete"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "styles": {
+                "type": "folder",
+                "required": true,
+                "children": {
+                    "style.json": {
+                        "type": "file",
+                        "required": true
+                    }
+                }
+            }
+        }
+    },
+    "1.0.1": {
+        "widgetSettings": {
+            "filePath": "settings/settings.json"
+        },
+        "widgetMaker": {
+            "folder": ""
+        },
+        "defaultContent": {
+            "filePath": "settings/sample.json"
+        },
+        "widgetParams": {
+            "filePath": "settings/toolbar.json",
+            "jsonPath": "data/content_option/fieldset/data"
+        },
+        "customLibs": {
+            "filePath": "settings/libFiles.json"
+        },
+        "standardLibs": {
+            "filePath": "settings/standardLibs.json"
+        },
+        "externalLibs": {
+            "filePath": "settings/genericLibs.json"
+        },
+        "styles": {
+            "folder": "styles"
+        },
+        "css": {
+            "folder": "css"
+        },
+        "js": {
+            "folder": "js"
+        },
+        "widgetIcon": {
+            "resource_value": {
+                "filePath": "settings/settings.json",
+                "jsonPath": "icon"
+            },
+            "resource_path": {
+                "filePath": "settings/resourcesSettings.json",
+                "jsonPath": "widgetIcon/{$icon}/path",
+                "base_folder": "resources/widgetIcon"
+            }
+        },
+        "storeImage": {
+            "resource_value": {
+                "filePath": "settings/settings.json",
+                "jsonPath": "card"
+            },
+            "resource_path": {
+                "filePath": "settings/resourcesSettings.json",
+                "jsonPath": "card/{$card}/path",
+                "base_folder": "resources/card"
+            }
+        },
+        "storeSlides": {
+            "slides_value": {
+                "filePath": "settings/settings.json",
+                "jsonPath": "exampleResource"
+            },
+            "img_slide": {
+                "filePath": "settings/resourcesSettings.json",
+                "jsonPath": "exampleResource",
+                "base_folder": "resources/exampleResource"
+            }
+        },
+        "assets": {
+            "base_folder": "resources/resource"
+        }
+    },
+    "test": {
+        "widgetSettings": {
+            "filePath": "settings/settings.json"
+        },
+        "widgetMaker": {
+            "folder": ""
+        },
+        "defaultContent": {
+            "filePath": "settings/sample.json"
+        },
+        "widgetParams": {
+            "filePath": "settings/toolbar.json",
+            "jsonPath": "data/content_option/fieldset/data"
+        },
+        "customLibs": {
+            "filePath": "settings/libFiles.json"
+        },
+        "standardLibs": {
+            "filePath": "settings/standardLibs.json"
+        },
+        "externalLibs": {
+            "filePath": "settings/genericLibs.json"
+        },
+        "styles": {
+            "folder": "styles"
+        },
+        "css": {
+            "folder": "css"
+        },
+        "js": {
+            "folder": "js"
+        },
+        "widgetIcon": {
+            "resource_value": {
+                "filePath": "settings/settings.json",
+                "jsonPath": "icon"
+            },
+            "resource_path": {
+                "filePath": "settings/resourcesSettings.json",
+                "jsonPath": "widgetIcon/{$icon}/path",
+                "base_folder": "resources/widgetIcon"
+            }
+        },
+        "storeImage": {
+            "resource_value": {
+                "filePath": "settings/settings.json",
+                "jsonPath": "card"
+            },
+            "resource_path": {
+                "filePath": "settings/resourcesSettings.json",
+                "jsonPath": "card/{$card}/path",
+                "base_folder": "resources/card"
+            }
+        },
+        "storeSlides": {
+            "slides_value": {
+                "filePath": "settings/settings.json",
+                "jsonPath": "exampleResource"
+            },
+            "img_slide": {
+                "filePath": "settings/resourcesSettings.json",
+                "jsonPath": "exampleResource",
+                "base_folder": "resources/exampleResource"
+            }
+        },
+        "assets": {
+            "base_folder": "resources/resource"
+        }
+    }
+}

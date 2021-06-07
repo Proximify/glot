@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "File parameter",
+    "description": "File parameter. Upload assets and the file type is doc related, like pdf, txt.",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "file"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "targetType": {
+            "const": "doc"
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label", "targetType"]
+}

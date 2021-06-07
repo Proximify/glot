@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Number parameter",
+    "description": "Number parameter",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "number"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "target": {
+            "const": "css",
+            "description": "CSS number parameter. Change parameter will change css properties. If target property is set, the name of the parameter will be the css property, like color, background-color."
+        },
+        "units": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "minItems": 1,
+                "uniqueItems": true,
+                "properties": {
+                    "value": {
+                        "type": "string"
+                    },
+                    "label": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label", "units"]
+}

@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Simple number parameter",
+    "description": "Simple number parameter (without unit)",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "simpleNumber"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "numberType": {
+            "description": "Type of number.",
+            "enum": ["init", "float"]
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label"]
+}

@@ -1,0 +1,24 @@
+<html>
+
+<body>
+
+    <button id="btn">Click Me!</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        var hello = function () {
+            document.getElementById("demo").innerHTML += this;
+        }
+
+        window.addEventListener("load", hello);
+
+        // A button object that calls the function:
+        document.getElementById("btn").addEventListener("click", hello);
+
+    </script>
+
+</body>
+
+</html>

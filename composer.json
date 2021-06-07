@@ -1,15 +1,21 @@
 {
-    "name": "proximify/glot",
-    "description": "Create websites using a multilingual markup language.",
-    "type": "project",
-    "license": "LGPL-3.0-or-later",
-    "keywords": [
-        "markup",
-        "localization",
-        "multilingual"
+    "name": "proximify/glot-renderer",
+    "description": "Renderer module for the GLOT framework.",
+    "version": "1.0.0",
+    "license": "GPL-2.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Proximify",
+            "email": "support@proximify.ca"
+        }
     ],
-    "support": {
-        "email": "support@proximify.com"
+    "require": {
+        "php": ">=7.1.0"
     },
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Proximify\\Glot\\": "src/"
+        }
+    }
 }

@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Parameter name",
+    "description": "The parameter name. $params[$name] gets the parameter value in PHP.",
+    "type": "string"
+}

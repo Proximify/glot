@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Sub menu parameter",
+    "description": "Sub menu parameter.",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "submenu"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "inline": {
+            "type": ["boolean", "string"],
+            "description": "Inline sub menus.",
+            "pattern": "^1?$"
+        },
+        "collapse": {
+            "type": ["boolean", "string"],
+            "description": "Enable the button to collapse the sub menus",
+            "pattern": "^1?$"
+        },
+        "openByDefault": {
+            "type": ["boolean", "string"],
+            "description": "If the sub menu is collapsible, user can open it by default or close it by default.",
+            "pattern": "^1?$"
+        },
+        "context": {
+            "type": ["boolean", "string"],
+            "description": "If the sub menu is collapsible. Instead of make it as another module in the panel, we can make it as a children group of the parent parameter.",
+            "pattern": "^1?$"
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label"]
+}

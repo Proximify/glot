@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Parameter description",
+    "type": ["object", "string"],
+    "description": "Description will be displayed in the GLOT panel as a tooltip. The value can be multilingual."
+}

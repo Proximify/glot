@@ -1,0 +1,156 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Widget templates",
+    "description": "Widget templates",
+    "type": "object",
+    "definitions": {
+        "customCodeSchema": {
+            "type": "object",
+            "description": "Custom scss and css code. In GLOT, css code is automatically generated when users edit scss code.",
+            "properties": {
+                "generic": {
+                    "type": "string",
+                    "description": "Default css code."
+                },
+                "sm": {
+                    "type": "string",
+                    "description": "CSS code in small breakpoint."
+                },
+                "md": {
+                    "type": "string",
+                    "description": "CSS code in medium breakpoint."
+                },
+                "lg": {
+                    "type": "string",
+                    "description": "CSS code in large breakpoint."
+                },
+                "xl": {
+                    "type": "string",
+                    "description": "CSS code in extra large breakpoint."
+                }
+            }
+        }
+    },
+    "properties": {
+        "widget": {
+            "type": "string",
+            "description": "Widget name"
+        },
+        "id": {
+            "type": "string",
+            "description": "Widget id"
+        },
+        "widgetName": {
+            "type": "string",
+            "description": "Widget public name, displayed in GLOT"
+        },
+        "params": {
+            "type": "object",
+            "description": "Pairs of widget parameter key and value.",
+            "patternProperties": {
+                "^.*$": {
+                    "anyOf": [
+                        { "type": "string" },
+                        { "type": "integer" },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "description": "Multilingual parameter with auto translation enabled",
+                            "properties": {
+                                "dictionary": {
+                                    "type": "string"
+                                },
+                                "index": {
+                                    "type": ["string", "integer"],
+                                    "pattern": "^[1-9]?$"
+                                }
+                            },
+                            "required": ["dictionary", "index"]
+                        },
+                        {
+                            "type": "object",
+                            "description": "Multilingual parameter with auto translation disabled",
+                            "properties": {
+                                "@": {
+                                    "$ref": "./translationState.json"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "widgetStyles": {
+            "type": "array",
+            "description": "Widget themes. From widget package or the website.",
+            "items": {
+                "type": "object",
+                "uniqueItems": true,
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "description": "generic type is the global theme, it can be used by other widgets. custom type is used only for current widget. predefined type is the theme defined by widget itself.",
+                        "enum": ["custom", "generic", "predefined"]
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Theme name"
+                    }
+                }
+            }
+        },
+        "data": {
+            "description": "Children widgets",
+            "oneOf": [
+                {
+                    "type": "array",
+                    "items": {
+                        "$ref": "./templates.json"
+                    }
+                },
+                {
+                    "$ref": "./templates.json"
+                }
+            ]
+        },
+        "sysParams": {
+            "type": "object",
+            "description": "System parameters",
+            "properties": {
+                "changeable": {
+                    "type": ["string", "boolean"],
+                    "description": "If the widget is inside the master page, we can set this property to true and let children page edit this widget.",
+                    "pattern": "^1?$"
+                },
+                "invisible": {
+                    "type": ["string", "boolean"],
+                    "description": "Toggle visibility of the widget.",
+                    "pattern": "^1?$"
+                }
+            }
+        },
+        "customCode": {
+            "type": ["object", "string"],
+            "description": "Custom scss code and auto generated css code.",
+            "properties": {
+                "customSCSS": {
+                    "$ref": "#/definitions/customCodeSchema"
+                },
+                "customCss": {
+                    "$ref": "#/definitions/customCodeSchema"
+                }
+            },
+            "pattern": "^$"
+        },
+        "css": {
+            "type": "object",
+            "description": "Pairs of css property and value. The key can also be responsive breakpoint size or pseudo selectors"
+        }
+    },
+    "required": ["widget", "id"]
+}

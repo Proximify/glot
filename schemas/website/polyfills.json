@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Widget core polyfills",
+    "description": "Javascript core polyfills",
+    "type": "object",
+    "patternProperties": {
+        "^.*$": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "The purpose of the polyfill"
+                },
+                "src": {
+                    "type": "string",
+                    "description": "The url of the polyfill"
+                }
+            },
+            "required": ["name", "src"]
+        }
+    }
+}

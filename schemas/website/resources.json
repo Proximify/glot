@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Website assets schema",
+    "description": "Settings of website assets like images, videos and documents",
+    "type": "object",
+    "oneOf": [
+        { "$ref": "#/definitions/isFolder" },
+        { "$ref": "#/definitions/isAsset" }
+    ],
+    "definitions": {
+        "isFolder": {
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "isFolder": {
+                            "const": true
+                        },
+                        "label": {
+                            "type": "string",
+                            "description": "The label of the folder"
+                        },
+                        "path": {
+                            "type": "string"
+                        }
+                    },
+                    "required": ["isFolder", "label", "path"],
+                    "additionalProperties": false
+                }
+            }
+        },
+        "isAsset": {
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "type": {
+                            "enum": ["img", "video", "doc"]
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "File name of the asset"
+                        },
+                        "path": {
+                            "type": "string",
+                            "description": "Directory of the asset"
+                        },
+                        "size": {
+                            "type": "integer",
+                            "description": "File size of the asset"
+                        },
+                        "md5": {
+                            "type": "string",
+                            "description": "md5 of the file"
+                        },
+                        "editTime": {
+                            "type": "integer"
+                        },
+                        "dimensions": {
+                            "type": "string",
+                            "description": "Dimensions of the image"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Href parameter",
+    "description": "Href parameter",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "href"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        },
+        "editor": {
+            "const": false
+        },
+        "live": {
+            "const": false
+        },
+        "linkOption": {
+            "const": true
+        },
+        "notranslate": {
+            "const": true
+        }
+    },
+    "required": [
+        "type",
+        "name",
+        "label",
+        "editor",
+        "live",
+        "linkOption",
+        "notranslate"
+    ]
+}

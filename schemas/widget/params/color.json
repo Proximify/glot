@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Color parameter",
+    "description": "Color parameter. Change the parameter by a color picker.",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "color"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "target": {
+            "const": "css",
+            "description": "CSS color parameter. Change parameter will change css properties. If target property is set, the name of the parameter will be the css property, like color, background-color."
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label"]
+}

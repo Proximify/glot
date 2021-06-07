@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Translation state",
+    "type": "object",
+    "description": "Meta data of translation",
+    "properties": {
+        "state": {
+            "type": "object",
+            "description": "state. Pairs of language and state",
+            "patternProperties": {
+                "^[a-z]?$": {
+                    "type": "object",
+                    "properties": {
+                        "master": {
+                            "type": "string",
+                            "enum": [
+                                "pending",
+                                "inprogress",
+                                "translated",
+                                "approved"
+                            ]
+                        },
+                        "secondary": {
+                            "type": "string",
+                            "enum": [
+                                "returned",
+                                "prepopulated",
+                                "awaiting",
+                                "machineTranslated"
+                            ]
+                        },
+                        "isSource": {
+                            "type": "boolean"
+                        }
+                    }
+                }
+            }
+        },
+        "lastAuthor": {
+            "type": "object",
+            "description": "Last edit user. Pairs of language and user id.",
+            "patternProperties": {
+                "^[a-z]?$": {
+                    "type": "integer"
+                }
+            }
+        },
+        "time": {
+            "type": "object",
+            "description": "Last edit time. Pairs of language and value.",
+            "patternProperties": {
+                "^[a-z]?$": {
+                    "type": ["integer", "string"]
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

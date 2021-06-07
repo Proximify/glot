@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Slide parameter",
+    "description": "Slide parameter. Change the parameter by a slide",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "slide"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "min": {
+            "type": ["integer", "string"],
+            "pattern": "^[0-9]*$"
+        },
+        "max": {
+            "type": ["integer", "string"],
+            "pattern": "^[0-9]*$"
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label"]
+}

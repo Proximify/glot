@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Website services schema",
+    "description": "Website services schema",
+    "type": "object",
+    "properties": {
+        "homepage": {
+            "type": "string",
+            "description": "Set the home page of the website"
+        },
+        "breakpoints": {
+            "type": "object",
+            "description": "Breakpoint sizes",
+            "properties": {
+                "generic": {
+                    "type": "string",
+                    "pattern": "^[0-9]*$"
+                },
+                "sm": {
+                    "type": "string",
+                    "pattern": "^[0-9]*$"
+                },
+                "md": {
+                    "type": "string",
+                    "pattern": "^[0-9]*$"
+                },
+                "lg": {
+                    "type": "string",
+                    "pattern": "^[0-9]*$"
+                },
+                "xl": {
+                    "type": "string",
+                    "pattern": "^[0-9]*$"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

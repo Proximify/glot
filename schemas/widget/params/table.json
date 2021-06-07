@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Table parameter",
+    "description": "Table parameter (data source)",
+    "type": "object",
+    "properties": {
+        "type": {
+            "const": "table"
+        },
+        "name": {
+            "$ref": "utils/name.json"
+        },
+        "label": {
+            "$ref": "utils/label.json"
+        },
+        "description": {
+            "$ref": "utils/description.json"
+        },
+        "schema": {
+            "type": "object",
+            "description": "Json format schema which is used for mapping files in the given data source to the widget parameters."
+        },
+        "conditions": {
+            "$ref": "utils/conditions.json"
+        }
+    },
+    "required": ["type", "name", "label"]
+}
